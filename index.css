@@ -1,1 +1,7 @@
+/* This CSS file defines the styles for the web page. */
 
+
+  /* This sets the color of the word "Meep" to red when the user hovers over it. */
+.meep:hover {
+  color: red;
+}
