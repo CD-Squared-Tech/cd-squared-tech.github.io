@@ -3,3 +3,26 @@
 #moo:hover {
   color: red;
 }
+
+/* keyframes */
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+/* Animation Classes */
+.spinner {
+  animation: spinner 1000ms linear infinite;
+}
+
+.fasterspinner {
+  animation: spinner 500ms linear infinite;
+}
+
+.fastestspinner {
+  animation: spinner 200ms linear infinite;
+}
