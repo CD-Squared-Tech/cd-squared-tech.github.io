@@ -1,5 +1,0 @@
-/* This CSS rule targets the heading element with the ID attribute "mooo" and changes its color to red when the mouse hovers over it */
-
-#mooo:hover {
-  color: red;
-}
