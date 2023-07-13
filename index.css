@@ -1,5 +1,14 @@
 /* This CSS rule targets the heading element with the ID attribute "mooo" and changes its color to red when the mouse hovers over it */
 
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(231, 231, 231);
+}
+
 #moo:hover {
   color: red;
 }
@@ -26,3 +35,4 @@
 .fastestspinner {
   animation: spinner 200ms linear infinite;
 }
+
