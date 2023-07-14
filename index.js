@@ -1,5 +1,5 @@
 'use strict';
-import { annoyingSpinner } from './modules/annoyingSpinner.js';
+import { annoyingSpinner } from './modules/textAnimations/annoyingSpinner.js';
 
 console.log('test');
 annoyingSpinner();
