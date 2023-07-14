@@ -19,4 +19,12 @@ export const annoyingSpinner = () => {
       x.classList.add('fastestspinner');
     });
   }, 15000);
-};
+
+// Help prevent dizziness by adding an event listener to stop the spinner when someone clicks on the screen
+
+  document.addEventListener('click', () => {
+    nodes.forEach((x) => {
+      x.classList.remove('spinner', 'fasterspinner', 'fastestspinner');
+    });
+  });
+}
