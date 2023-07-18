@@ -1,12 +1,15 @@
 'use strict';
-import {
-  annoyingSpinner,
-  stopSpinner,
-} from './modules/spinner/annoyingSpinner.js';
+import { annoyingSpinner } from './modules/spinner/annoyingSpinner.js';
 
-annoyingSpinner(5000);
-document.getElementById('stopButton').addEventListener('click', stopSpinner);
+const spin = new annoyingSpinner();
+console.log(spin);
+spin.start();
+spin.stopSpinner();
+
+document.querySelector('#stopButton').addEventListener('click', () => {
+  spin.stopSpinner();
+});
 document.querySelector('#startSpinner').addEventListener('click', () => {
-  stopSpinner();
-  annoyingSpinner();
+  spin.stopSpinner();
+  spin.start();
 });
