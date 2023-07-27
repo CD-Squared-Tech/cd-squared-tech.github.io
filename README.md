@@ -14,7 +14,7 @@ CD Tech is a group formed to help career changers and aspiring tech enthusiasts 
 
 - **Date**: Every other Thursday
 - **Location**: AlloHire ([Google Maps Link](https://www.google.com/maps/search/?api=1&query=35.039825%2C%20-85.308334))
-- **Time**: 6:00 PM to 9:00 PM, EST)
+- **Time**: 6:00 PM to 9:00 PM, EST
 
 ## What to Expect
 
@@ -34,7 +34,6 @@ Everyone is welcome to join CD Tech, whether you're a complete beginner or have 
 ## How to Participate
 1. Follow [ChaTech on LinkedIn](https://www.linkedin.com/company/chatechcouncil/) to stay updated about the event schedule.
 2. Join our CD Tech group through [ChaDev on Meetup](https://www.meetup.com/link-to-chadev/) and RSVP for the next Meetup.
-3. Join our Discord channel - The primary method of communication for our group project: [Discord Invite Link](). <span style="background-color: #FFFF00">To Do - Create a permanent Discord invite link</span> 
 
 ## Contact Us
 
@@ -42,7 +41,7 @@ Have any questions or need more information? Feel free to reach out to us on Lin
 
 ## Organizers
 
-- [T.C Cox](https://www.meetup.com/chadevs/members/236340766/)
+- [T.C Cox](https://www.linkedin.com/in/thomas-tc-cox/)
 
 
 ## License
