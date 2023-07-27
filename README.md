@@ -6,7 +6,9 @@ Trying to get into Tech but don't know where to start? ChaDev, in collaboration 
 
 CD Tech is a group formed to help career changers and aspiring tech enthusiasts transition into the world of technology. If you've been struggling to find your way into the tech industry, join us to get the support, mentorship, and friendship you need to thrive.
 
-![CD Tech Group Logo](link-to-group-logo.png)
+<div style="text-align: center;">
+  <img src="CD_Techies_Logo.png" alt="Group logo">
+</div>
 
 ## Event Details
 
