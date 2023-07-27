@@ -59,7 +59,7 @@ To contribute to the CD Tech landing page project, you'll need the following:
    - If you encounter any issues while using or testing the website, report them following the issue template.
 
 3. Documentation:
-   - Help improve project documentation, including README.md and inline comments.
+   - Help improve project documentation, including README.md and inline comments. <span style="background-color: #FFFF00">To Do - Create README.md</span> 
 
 4. Design:
    - Contribute your design skills to enhance the visual appeal and user experience of the website.
