@@ -1,4 +1,4 @@
-# CD Tech Landing Page Project: <br>  Contribution Guidelines
+# CD Tech Landing Page Project: Contribution Guidelines
 
 ## Description
 CD Tech is a collaborative project supported by <a href="https://www.chadev.com" target="_blank">ChaDev</a> in collaboration with <a href="https://www.chatech.org/" target="_blank">ChaTech</a>. The project aims to help individuals interested in transitioning into the tech industry by providing a platform for learning, sharing, and building a group website that emulates a professional workflow.
@@ -15,7 +15,7 @@ To contribute to the CD Tech landing page project, you'll need the following:
 <details>
 <summary>HTML</summary>
 
-- sdgsgsg
+- <span style="background-color: #FFFF00">To Do - Add learning resource links</span>
 - sdgsdgsdg
 - sdgsdg
 </details>
@@ -23,7 +23,7 @@ To contribute to the CD Tech landing page project, you'll need the following:
 <details>
 <summary>CSS</summary>
 
-- sdgsgsg
+- <span style="background-color: #FFFF00">To Do - Add learning resource links</span>
 - sdgsdgsdg
 - sdgsdg
 </details>
@@ -31,7 +31,7 @@ To contribute to the CD Tech landing page project, you'll need the following:
 <details>
 <summary>JavaScript</summary>
 
-- sdgsgsg
+- <span style="background-color: #FFFF00">To Do - Add learning resource links</span>
 - sdgsdgsdg
 - sdgsdg
 </details>
@@ -51,8 +51,6 @@ To contribute to the CD Tech landing page project, you'll need the following:
   5. Submit a pull request, explaining the changes you've made and why they should be merged.
 
 ## We welcome contributions in various forms
-
-
 1. Code Contributions:
    - Work on existing issues or create new ones to improve the landing page.
    - Follow the coding standards and guidelines outlined in the project.
@@ -81,7 +79,7 @@ If you come across any bugs or have suggestions for improvements, please create 
 If you have ideas for new features or functionalities, feel free to submit a feature request issue. We encourage open discussions around potential enhancements.  <span style="background-color: #FFFF00">To Do - Add the Feature Request template, available in the GitHub Settings options.</span>
 
 ## Community Guidelines
-CD Tech aims to be an inclusive and welcoming community for all individuals interested in tech. We value diversity, respect, and professionalism. As CD Tech falls under the umbrella of ChaDev, we have adopted the <a href="https://chadev.com/coc/" target="_blank">ChaDev Code of Conduct</a> for our group. Please review the code of conduct before contributing to this project, and please follow these basic guidelines when interacting with other members of the community:
+CD Tech aims to be an inclusive and welcoming community for all individuals interested in tech. We value diversity, respect, and professionalism. In alignment with the ChaDev community, we adhere to the ChaDev Code of Conduct <a href="https://chadev.com/coc/" target="_blank">ChaDev Code of Conduct</a>.  We request that all contributors review the code of conduct before engaging with the project. Please keep the following essential guidelines in mind while interacting with fellow community members:
 
 1. Be respectful and considerate of others' opinions and experiences.
 2. Avoid any form of discrimination, harassment, or offensive language.
