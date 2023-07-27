@@ -15,25 +15,25 @@ To contribute to the CD Tech landing page project, you'll need the following:
 <details>
 <summary>HTML</summary>
 
-- <span style="background-color: #FFFF00">To Do - Add learning resource links</span>
-- sdgsdgsdg
-- sdgsdg
+- <a href="https://www.freecodecamp.org/news/html-crash-course/">HTML for Beginners (freeCodeCamp)</a>
+- <a href="https://www.codecademy.com/learn/learn-html">Learn HTML (Codecademy)</a>
+- <a href="https://www.youtube.com/watch?v=GDGejH3SDNQ&t=19s&ab_channel=freeCodeCamp.org">HTML & Coding Introduction – Course for Beginners (YouTube video from freeCodeCamp)</a>
 </details>
 
 <details>
 <summary>CSS</summary>
 
-- <span style="background-color: #FFFF00">To Do - Add learning resource links</span>
-- sdgsdgsdg
-- sdgsdg
+- <a href="https://www.codecademy.com/learn/learn-css">Learn CSS (Codecademy)</a>
+- <a href="https://www.freecodecamp.org/news/learn-css-in-11-hours/">Learn CSS in 11 Hours (freeCodeCamp)</a>
+- <a href="https://www.youtube.com/watch?v=jNwCMTQ9ico&ab_channel=ColtSteele">Intro to CSS - Colt's Code Camp (YouTube video)</a>
 </details>
 
 <details>
 <summary>JavaScript</summary>
 
-- <span style="background-color: #FFFF00">To Do - Add learning resource links</span>
-- sdgsdgsdg
-- sdgsdg
+- <a href="https://www.freecodecamp.org/news/learn-javascript-for-beginners/">Learn JavaScript for Beginners – JS Basics Handbook (freeCodeCamp)</a>
+- <a href="https://www.codecademy.com/learn/introduction-to-javascript">Learn JavaScript (Codecademy)</a>
+-  <a href="https://www.youtube.com/watch?v=BI1o2H9z9fo&t=1448s&ab_channel=TraversyMedia">Modern JavaScript From The Beginning | First 12 Hours (Traversy Media)</a>
 </details>
 
 <details>
