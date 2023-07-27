@@ -8,6 +8,7 @@ To contribute to the CD Tech landing page project, you'll need the following:
  - Basic knowledge of web development technologies such as HTML, CSS, and JavaScript.
  - A code editor of your choice (we recommend Visual Studio Code)
  - Familiarity with version control, particularly Git and GitHub.
+ 
  <div style="margin-left: 25px;">
 
 #### Here are some resources to get you started if you need to learn more about these technologies:
@@ -59,7 +60,7 @@ To contribute to the CD Tech landing page project, you'll need the following:
    - If you encounter any issues while using or testing the website, report them following the issue template.
 
 3. Documentation:
-   - Help improve project documentation, including README.md and inline comments. <span style="background-color: #FFFF00">To Do - Create README.md</span> 
+   - Help improve project documentation, including README.md and inline comments. 
 
 4. Design:
    - Contribute your design skills to enhance the visual appeal and user experience of the website.
