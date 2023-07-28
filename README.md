@@ -32,8 +32,8 @@ At CD Tech, we aim to create an inclusive and welcoming environment for everyone
 Everyone is welcome to join CD Tech, whether you're a complete beginner or have some tech experience. Don't hesitate to drop by and see what we're all about. Join us this Thursday and be a part of this exciting journey!
 
 ## How to Participate
-1. Follow [ChaTech on LinkedIn](https://www.linkedin.com/company/chatechcouncil/) to stay updated about the event schedule.
-2. Join our CD Tech group through [ChaDev on Meetup](https://www.meetup.com/link-to-chadev/) and RSVP for the next Meetup.
+1. Follow <a href="https://www.linkedin.com/company/chatechcouncil/" target="_blank">ChaTech on LinkedIn</a> to stay updated about the event schedule.
+2. Join our CD Tech group through <a href="https://www.meetup.com/chadevs/" target="_blank">ChaDev on Meetup</a> and RSVP for the next Meetup.
 
 ## Contact Us
 
@@ -41,7 +41,7 @@ Have any questions or need more information? Feel free to reach out to us on Lin
 
 ## Organizers
 
-- [T.C Cox](https://www.linkedin.com/in/thomas-tc-cox/)
+- <a href="https://www.linkedin.com/in/thomas-tc-cox/" target="_blank">T.C Cox</a>
 
 
 ## License
