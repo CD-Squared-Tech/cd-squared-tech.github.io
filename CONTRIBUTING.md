@@ -42,6 +42,14 @@ To contribute to the CD Tech landing page project, you'll need the following:
 <p>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://code.visualstudio.com/download">Download Link for Visual Studio Code</a></p>
 </details>
 
+<details>
+<summary>Git and GitHub</summary>
+
+- <a href="https://github.com/git-guides">Git Guides from GitHub</a>
+- <a href="https://skills.github.com/">Interactive Courses from GitHub</a>
+-  <a href="https://learngitbranching.js.org/">Interactive Git Tutorial from Developer Peter Cottle</a>
+</details>
+
 </div>
 
   ## Contribution Steps
@@ -68,16 +76,17 @@ To contribute to the CD Tech landing page project, you'll need the following:
 ## Communication
 Join our community and stay connected:
 
-- Discord:  <span style="background-color: #FFFF00">To Do - Add Permanent Discord invite link</span>
+- **Discord** is our primary communication platform for the web project. Contact a group organizer to gain access and start engaging with the CD Tech community.
 
 ## Code Review Process
 All contributions will be reviewed by the project maintainers. Please be patient during the review process, and address any feedback received. Your pull request will be merged once it meets the project's guidelines.
 
 ## Reporting Issues
-If you come across any bugs or have suggestions for improvements, please create an issue using the issue template. Provide as much detail as possible to help us understand and resolve the problem effectively. <span style="background-color: #FFFF00">To Do - Add Issues template, available from the GitHub Settings options.</span>
+If you come across any bugs or have suggestions for improvements, please create an issue. Provide as much detail as possible to help us understand and resolve the problem effectively. <span style="color: red;"><em>(To Do - Decide if we want to add an Issues template.)</em></span>
 
 ## Feature Requests
-If you have ideas for new features or functionalities, feel free to submit a feature request issue. We encourage open discussions around potential enhancements.  <span style="background-color: #FFFF00">To Do - Add the Feature Request template, available in the GitHub Settings options.</span>
+If you have ideas for new features or functionalities, feel free to submit a feature request issue. We encourage open discussions around potential enhancements.  <span style="color: red;"><em>(To Do - Decide if we want to add a Feature Request template.)</em></span>
+
 
 ## Community Guidelines
 CD Tech aims to be an inclusive and welcoming community for all individuals interested in tech. We value diversity, respect, and professionalism. In alignment with the ChaDev community, we adhere to the ChaDev Code of Conduct <a href="https://chadev.com/coc/" target="_blank">ChaDev Code of Conduct</a>.  We request that all contributors review the code of conduct before engaging with the project. Please keep the following essential guidelines in mind while interacting with fellow community members:
