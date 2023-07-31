@@ -1,38 +1,194 @@
-/* This CSS rule targets the heading element with the ID attribute "mooo" and changes its color to red when the mouse hovers over it */
+/* 
+Property of CD Tech
 
+
+Contributers:
+TC
+James  
+Steven P.
+
+
+*/
+
+/* Color Variables */
+:root {
+  --ligherBlueSteel: #F5FAFC;
+  --lightBlueSteel: #BDCED5;
+  --blackBlueSteel: #131719;
+  --darkBlueSteel: #2E3E47;
+  --blueSteel: #678693;
+}
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Lato:ital,wght@0,100;0,300;1,100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Lato:ital,wght@0,100;0,300;1,100&family=Noto+Sans:wght@100&display=swap');
 
 * {
     box-sizing: border-box;
 }
 
+html,
 body {
-    background-color: rgb(231, 231, 231);
+	height: 100%;
+	width: 100%;
+  margin: auto;
+  background-color: var(--lighterBlueSteel);
 }
 
-#moo:hover {
-  color: red;
+/* Button Style */
+.cdBtn {
+  padding: 8px 16px;
+  font-size: 1rem;
+  display: inline-block;
+  width: fit-content;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--darkBlueSteel);
+  color: var(--lightBlueSteel);
 }
 
-/* keyframes */
-@keyframes spinner {
-  0% {
-    transform: rotate(0deg);
+.cdBtn:hover {
+  background-color: var(--blueSteel);
+  cursor: pointer;
+}
+
+/* Sidebar and Content Wrapper */
+.mainPageWrapper {
+  display: flex;
+  position: relative;
+	height: 100%;
+  background-color: var(--ligherBlueSteel);
+}
+
+/* Sidebar */
+.sidebarWrapper {
+  display: block;
+  width: 22%;
+  position: sticky;
+  z-index: 100;
+  background-color: var(--ligherBlueSteel);
+  box-shadow: 0px 0px 15px var(--darkBlueSteel);
+}
+
+
+/* Content */
+.mainContentWrapper {
+  display: flex; 
+  flex-direction: column;
+  width: 100%;
+  background-color: var(--ligherBlueSteel);
+  position: static;
+}
+
+.content {
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+
+/* Hero Section */
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 85dvh;
+  min-height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(./resources/images/hero-background.jpg);
+  justify-content: center;
+  align-items: start;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: .65;
+  background-color: var(--ligherBlueSteel);
+}
+
+.heroContent {
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+  max-width: 80%;
+}
+
+.heroContent, h1, h3{
+  color: var(--darkBlueSteel);
+  z-index: 1;
+  position: relative;
+}
+
+.heroContent h1{
+  font-size: 7vw;
+  font-family: 'Baskervville', serif;
+  margin: 0px;
+}
+
+.heroContent h3{
+  font-size: 1.3vw;
+  font-family: 'Noto Sans', sans-serif;
+  margin-top: 10px;
+  font-weight: 200;
+}
+
+
+/* Media query breakpoints */
+/* Phone */
+@media screen and (max-width: 768px) {
+  .mainPageWrapper {
+    flex-direction: column;
   }
-  100% {
-    transform: rotate(359deg);
+
+  .mainContentWrapper {
+    margin-top: 200px;
+    overflow: hidden;
   }
+
+  .sidebarWrapper {
+    flex-direction: column;
+    width: 100dvw;
+    height: 200px;
+    position: fixed;
+  }
+
+  .sidebar {
+    height: 170px;
+  }
+
+  .heroContent {
+    margin: auto;
+  }
+
+  .hero {
+    justify-content: center;
+    align-items: start;
+    height: 60dvh;
+  }
+
+  .heroContent h1{
+    font-size: 3rem;
+  }
+
+  .heroContent h3{
+    font-size: 1rem;
+  }
+
+  
 }
 
-/* Animation Classes */
-.spinner {
-  animation: spinner 1000ms linear infinite;
+/* Tablets / Laptops */
+@media screen and (min-width: 769px) and (max-width: 1200) {
+
 }
 
-.fasterspinner {
-  animation: spinner 500ms linear infinite;
-}
 
-.fastestspinner {
-  animation: spinner 200ms linear infinite;
-}
+/* Desktops */
+@media screen and (min-width: 1201px) and (max-width: 1400) {
 
+}
