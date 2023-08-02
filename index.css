@@ -1,11 +1,12 @@
-/* 
+/*
 Property of CD Tech
 
 
 Contributers:
 TC
-James  
+James
 Steven P.
+Rachel D.
 
 
 */
@@ -73,7 +74,7 @@ body {
 
 /* Content */
 .mainContentWrapper {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   width: 100%;
   background-color: var(--ligherBlueSteel);
@@ -118,19 +119,19 @@ body {
   max-width: 80%;
 }
 
-.heroContent, h1, h3{
+.heroContent, h1, p {
   color: var(--darkBlueSteel);
   z-index: 1;
   position: relative;
 }
 
-.heroContent h1{
+.heroContent h1 {
   font-size: 7vw;
   font-family: 'Baskervville', serif;
   margin: 0px;
 }
 
-.heroContent h3{
+.heroContent p {
   font-size: 1.3vw;
   font-family: 'Noto Sans', sans-serif;
   margin-top: 10px;
@@ -175,11 +176,9 @@ body {
     font-size: 3rem;
   }
 
-  .heroContent h3{
+  .heroContent p {
     font-size: 1rem;
   }
-
-  
 }
 
 /* Tablets / Laptops */
@@ -190,5 +189,139 @@ body {
 
 /* Desktops */
 @media screen and (min-width: 1201px) and (max-width: 1400) {
+
+}
+
+
+
+/* Card Component Section */
+
+/* Mobile Styles */
+.cards {
+  background-color: var(--lightBlueSteel);
+}
+
+.cards-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2.5em 0;
+}
+
+.card {
+  width: 90%;
+  background-color: #fff;
+  margin-bottom: 2em;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 1px 5px 10px rgba(0,0,0,0.1);
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+.card > img {
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: .25em 1em 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-content > p {
+  font-size: 1rem;
+  line-height: 1.35;
+  font-family: 'Noto Sans', sans-serif;
+  text-align: justify;
+  padding: 0 1em;
+}
+
+.btn-card {
+  background-color: var(--blueSteel);
+  margin: 0 auto;
+  width: 50%;
+  border: none;
+  color: #fff;
+  border-radius: 3px;
+  padding: 1em 1.25em;
+  letter-spacing: 1.1px;
+  cursor: pointer;
+}
+
+.btn-card:hover {
+  opacity: .8;
+}
+
+/* Tablet Styles */
+
+@media (min-width: 720px) {
+
+  .cards {
+    height: 500px;
+  }
+
+  .cards-container {
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 3.5em 0;
+  }
+
+  .card {
+    width: 45%;
+  }
+
+  .card-content > p {
+    padding: 0 .5em;
+  }
+
+  .btn-card {
+    width: 50%;
+  }
+}
+
+/* Desktop Styles */
+
+@media (min-width: 1100px) {
+
+  .cards {
+    height: 600px;
+  }
+
+  .cards-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .card {
+    max-width: 400px;
+  }
+
+  .card > img {
+    transition: transform 750ms cubic-bezier(.5, 0, .5, 1); /* Animation */
+  }
+
+  .card > img:hover {
+    transform: scale(1.1);
+  }
+
+  .card-content > p {
+    font-size: 1rem;
+  }
+
+  .btn-card {
+    width: 40%;
+    font-size: 1rem;
+    padding: .75em 1em;
+  }
 
 }
