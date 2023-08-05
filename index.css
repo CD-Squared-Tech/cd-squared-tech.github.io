@@ -18,6 +18,8 @@ Rachel D.
   --blackBlueSteel: #131719;
   --darkBlueSteel: #2E3E47;
   --blueSteel: #678693;
+  /* Mobile head of header variable... for mobile sidebar height, mobile sidebar wrapper height, and top margin for content area */
+  --headerHeight: 120px;
 }
 
 /* Fonts */
@@ -147,19 +149,19 @@ body {
   }
 
   .mainContentWrapper {
-    margin-top: 200px;
+    margin-top: var(--headerHeight);
     overflow: hidden;
   }
 
   .sidebarWrapper {
     flex-direction: column;
     width: 100dvw;
-    height: 200px;
+    height: var(--headerHeight);
     position: fixed;
   }
 
   .sidebar {
-    height: 170px;
+    height: var(--headerHeight);
   }
 
   .heroContent {
