@@ -13,25 +13,25 @@ Rachel D.
 
 /* Color Variables */
 :root {
-  --ligherBlueSteel: #F5FAFC;
-  --lightBlueSteel: #BDCED5;
+  --ligherBlueSteel: #f5fafc;
+  --lightBlueSteel: #bdced5;
   --blackBlueSteel: #131719;
-  --darkBlueSteel: #2E3E47;
+  --darkBlueSteel: #2e3e47;
   --blueSteel: #678693;
 }
 
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Lato:ital,wght@0,100;0,300;1,100&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Baskervville&family=Lato:ital,wght@0,100;0,300;1,100&family=Noto+Sans:wght@100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Baskervville&family=Lato:ital,wght@0,100;0,300;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baskervville&family=Lato:ital,wght@0,100;0,300;1,100&family=Noto+Sans:wght@100&display=swap");
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
 body {
-	height: 100%;
-	width: 100%;
+  height: 100%;
+  width: 100%;
   margin: auto;
   background-color: var(--lighterBlueSteel);
 }
@@ -57,7 +57,7 @@ body {
 .mainPageWrapper {
   display: flex;
   position: relative;
-	height: 100%;
+  height: 100%;
   background-color: var(--ligherBlueSteel);
 }
 
@@ -71,6 +71,53 @@ body {
   box-shadow: 0px 0px 15px var(--darkBlueSteel);
 }
 
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100%;
+}
+
+.logo {
+  padding: 5px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.socials ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+
+.socials li {
+  background-color: var(--blueSteel);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.fa-linkedin-in {
+  padding: 0 3px;
+}
+
+.fa-facebook-f {
+  padding: 0 4px;
+}
+
+.socials li a {
+  text-decoration: none;
+  color: white;
+}
+
+.copyright {
+  margin-top: auto;
+  padding: 10px;
+  font-size: 0.875rem;
+}
 
 /* Content */
 .mainContentWrapper {
@@ -85,7 +132,6 @@ body {
   height: 100vh;
   overflow-y: scroll;
 }
-
 
 /* Hero Section */
 .hero {
@@ -102,13 +148,13 @@ body {
 }
 
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  opacity: .65;
+  opacity: 0.65;
   background-color: var(--ligherBlueSteel);
 }
 
@@ -119,7 +165,9 @@ body {
   max-width: 80%;
 }
 
-.heroContent, h1, p {
+.heroContent,
+h1,
+p {
   color: var(--darkBlueSteel);
   z-index: 1;
   position: relative;
@@ -127,17 +175,16 @@ body {
 
 .heroContent h1 {
   font-size: 7vw;
-  font-family: 'Baskervville', serif;
+  font-family: "Baskervville", serif;
   margin: 0px;
 }
 
 .heroContent p {
   font-size: 1.3vw;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   margin-top: 10px;
   font-weight: 200;
 }
-
 
 /* Media query breakpoints */
 /* Phone */
@@ -147,19 +194,39 @@ body {
   }
 
   .mainContentWrapper {
-    margin-top: 200px;
+    /* margin-top: 200px; */
     overflow: hidden;
   }
 
   .sidebarWrapper {
     flex-direction: column;
     width: 100dvw;
-    height: 200px;
+    height: 70px;
     position: fixed;
   }
 
   .sidebar {
-    height: 170px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .logo-container {
+    width: 200px;
+    margin-top: 10px;
+  }
+
+  .logo {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .socials {
+    margin-left: auto;
+    margin-right: 15px;
+  }
+
+  .copyright {
+    display: none;
   }
 
   .heroContent {
@@ -172,7 +239,7 @@ body {
     height: 60dvh;
   }
 
-  .heroContent h1{
+  .heroContent h1 {
     font-size: 3rem;
   }
 
@@ -180,19 +247,19 @@ body {
     font-size: 1rem;
   }
 }
-
+/* Media query breakpoints less than 515px */
+@media screen and (max-width: 515px) {
+  .socials {
+    display: none;
+  }
+}
 /* Tablets / Laptops */
 @media screen and (min-width: 769px) and (max-width: 1200) {
-
 }
-
 
 /* Desktops */
 @media screen and (min-width: 1201px) and (max-width: 1400) {
-
 }
-
-
 
 /* Card Component Section */
 
@@ -215,7 +282,7 @@ body {
   margin-bottom: 2em;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 1px 5px 10px rgba(0,0,0,0.1);
+  box-shadow: 1px 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 img {
@@ -231,7 +298,7 @@ img {
 }
 
 .card-content {
-  padding: .25em 1em 1em;
+  padding: 0.25em 1em 1em;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -241,7 +308,7 @@ img {
 .card-content > p {
   font-size: 1rem;
   line-height: 1.35;
-  font-family: 'Noto Sans', sans-serif;
+  font-family: "Noto Sans", sans-serif;
   text-align: justify;
   padding: 0 1em;
 }
@@ -259,13 +326,12 @@ img {
 }
 
 .btn-card:hover {
-  opacity: .8;
+  opacity: 0.8;
 }
 
 /* Tablet Styles */
 
 @media (min-width: 720px) {
-
   .cards {
     height: 500px;
   }
@@ -281,7 +347,7 @@ img {
   }
 
   .card-content > p {
-    padding: 0 .5em;
+    padding: 0 0.5em;
   }
 
   .btn-card {
@@ -292,7 +358,6 @@ img {
 /* Desktop Styles */
 
 @media (min-width: 1100px) {
-
   .cards {
     height: 600px;
   }
@@ -307,7 +372,7 @@ img {
   }
 
   .card > img {
-    transition: transform 750ms cubic-bezier(.5, 0, .5, 1); /* Animation */
+    transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1); /* Animation */
   }
 
   .card > img:hover {
@@ -321,7 +386,6 @@ img {
   .btn-card {
     width: 40%;
     font-size: 1rem;
-    padding: .75em 1em;
+    padding: 0.75em 1em;
   }
-
 }
