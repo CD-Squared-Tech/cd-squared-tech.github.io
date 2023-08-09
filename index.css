@@ -197,6 +197,64 @@ body {
 /* Card Component Section */
 
 /* Mobile Styles */
+
+@media(hover) { /*hover animations will only be applied when hover is available i.e on desktop */
+
+  .card-1,
+  .card-2 {
+    transition: .5s ease;
+  }
+
+  .card-1 {
+    background-color: #fff;
+  }
+
+  .card-1:hover {
+    box-shadow: 0px 10px 20px 5px rgba(0,0,0,0.5);
+    transform: translateY(-5px);
+  }
+
+  .card-1 button.btn-card,
+  .card-2 button.btn-card {
+    border: 2px solid var(--blueSteel);
+    background-color: transparent;
+    color: var(--blackBlueSteel);
+  }
+
+  .card-1:hover button.btn-card,
+  .card-2:hover button.btn-card {
+    background-color: var(--blueSteel);
+    color: var(--ligherBlueSteel);
+  }
+
+  .card-2 .card-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255,255,255, 0.8);
+    overflow: hidden;
+    width: 100%;
+    height: 25%;
+    transition: .5s ease;
+  }
+
+  .card-2 .card-bottom p.card-content {
+    display: none;
+    transition: .5s ease-in-out;
+  }
+
+  .card-2:hover .card-bottom {
+    height: 50%;
+    background-color: rgba(255,255,255, 1);
+  }
+
+  .card-2:hover .card-bottom p.card-content {
+    display: flex;
+  }
+}
+
+
 .cards {
   background-color: var(--lightBlueSteel);
 }
@@ -214,8 +272,7 @@ body {
   background-color: #fff;
   margin-bottom: 2em;
   border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 1px 5px 10px rgba(0,0,0,0.1);
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.25);
 }
 
 img {
@@ -223,32 +280,36 @@ img {
   display: block;
 }
 
-.card > img {
+.card-top > img {
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
   max-width: 100%;
   object-fit: cover;
 }
 
-.card-content {
-  padding: .25em 1em 1em;
+.card-bottom {
+  padding: 1em;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: stretch;
   flex-direction: column;
 }
 
-.card-content > p {
+.card-bottom > h2 {
+  margin-bottom: 0;
+}
+
+p.card-content {
   font-size: 1rem;
   line-height: 1.35;
   font-family: 'Noto Sans', sans-serif;
   text-align: justify;
-  padding: 0 1em;
+  margin-top: .5em;
 }
 
-.btn-card {
+button.btn-card {
   background-color: var(--blueSteel);
-  margin: 0 auto;
+  margin-top: .25em;
   width: 50%;
   border: none;
   color: #fff;
@@ -256,36 +317,43 @@ img {
   padding: 1em 1.25em;
   letter-spacing: 1.1px;
   cursor: pointer;
+  transition: .5s ease;
 }
 
-.btn-card:hover {
+button.btn-card:hover {
   opacity: .8;
 }
+
+
 
 /* Tablet Styles */
 
 @media (min-width: 720px) {
 
-  .cards {
-    height: 500px;
-  }
-
   .cards-container {
     flex-direction: row;
+    align-items: stretch;
     justify-content: space-around;
     padding: 3.5em 0;
   }
 
   .card {
     width: 45%;
+    position: relative;
   }
 
-  .card-content > p {
-    padding: 0 .5em;
+  p.card-content {
+    font-size: 0.875rem;
+    margin-bottom: 25px;
   }
 
-  .btn-card {
+  button.btn-card {
     width: 50%;
+    position: absolute;
+    bottom: 1em;
+    right: 1em;
+    left: 1em;
+    margin-top: 50px;
   }
 }
 
@@ -293,32 +361,38 @@ img {
 
 @media (min-width: 1100px) {
 
-  .cards {
-    height: 600px;
-  }
-
   .cards-container {
     max-width: 1000px;
     margin: 0 auto;
+    padding: 4em;
   }
 
   .card {
     max-width: 400px;
   }
 
-  .card > img {
-    transition: transform 750ms cubic-bezier(.5, 0, .5, 1); /* Animation */
+  .card-top {
+    overflow: hidden;
   }
 
-  .card > img:hover {
-    transform: scale(1.1);
+  /* .card-top > img {
+    transition: transform 750ms cubic-bezier(.5, 0, .5, 1);
+  } */
+
+  /* .card-top > img:hover {
+    transform: scale(1.2);
+  } */
+
+  .card-bottom > h2 {
+    font-size: 1.75rem;
   }
 
-  .card-content > p {
+  p.card-content {
     font-size: 1rem;
+    padding-bottom: 1em;
   }
 
-  .btn-card {
+  button.btn-card {
     width: 40%;
     font-size: 1rem;
     padding: .75em 1em;
