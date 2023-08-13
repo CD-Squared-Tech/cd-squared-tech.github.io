@@ -19,7 +19,7 @@ Rachel D.
   --darkBlueSteel: #2e3e47;
   --blueSteel: #678693;
   /* Mobile head of header variable... for mobile sidebar height, mobile sidebar wrapper height, and top margin for content area */
-  --headerHeight: 120px;
+  --headerHeight: 130px;
 }
 
 /* Fonts */
@@ -65,12 +65,15 @@ body {
 
 /* Sidebar */
 .sidebarWrapper {
+  min-width: 200px;
+  max-width: 350px;
   display: block;
   width: 22%;
   position: sticky;
   z-index: 100;
   background-color: var(--ligherBlueSteel);
   box-shadow: 0px 0px 15px var(--darkBlueSteel);
+  padding-top: 35px;
 }
 
 .sidebar {
@@ -78,12 +81,17 @@ body {
   flex-direction: column;
   text-align: center;
   height: 100%;
+  align-items: center;
 }
 
-.logo {
+.stacked-logo {
   padding: 5px;
-  margin-top: 20px;
-  width: 100%;
+  width: 80%;
+  margin: auto;
+}
+
+.logo-container {
+  margin-bottom: 30px;
 }
 
 .socials ul {
@@ -91,8 +99,9 @@ body {
   gap: 10px;
   list-style: none;
   padding: 0;
-  margin: 0;
-  justify-content: center;
+  margin: auto;
+  justify-content: space-evenly;
+  width: 75%;
 }
 
 .socials li {
@@ -115,7 +124,7 @@ body {
   color: white;
 }
 
-.copyright {
+.copyright[view="desktop"] {
   margin-top: auto;
   padding: 10px;
   font-size: 0.875rem;
@@ -191,6 +200,29 @@ p {
 /* Media query breakpoints */
 /* Phone */
 @media screen and (max-width: 768px) {
+
+  .stacked-logo {
+    display: none;
+  }
+
+  .horizontal-logo {
+    width: 180px;
+  }
+
+  .logo-container {
+    margin-bottom: 15px;
+  }
+
+  .socials ul {
+    gap: 30px;
+  }
+
+  .socials ul li {
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 1rem;
+  }
+
   .mainPageWrapper {
     flex-direction: column;
   }
@@ -205,6 +237,9 @@ p {
     width: 100dvw;
     height: var(--headerHeight);
     position: fixed;
+    min-width: none;
+    max-width: none;
+    padding-top: 25px;
   }
 
   .sidebar {
@@ -228,20 +263,30 @@ p {
   .heroContent p {
     font-size: 1rem;
   }
+
+  .copyright[view="desktop"] {
+    display: none;
+  }
+
+  .mobile-copyright {
+    text-align: center;
+    margin: 10px;
+  }
 }
 /* Media query breakpoints less than 515px */
 @media screen and (max-width: 515px) {
-  .socials {
+  /* .socials {
+    display: none;
+  } */
+}
+
+
+@media screen and (min-width: 769px) {
+  .horizontal-logo {
     display: none;
   }
 }
-/* Tablets / Laptops */
-@media screen and (min-width: 769px) and (max-width: 1200) {
-}
 
-/* Desktops */
-@media screen and (min-width: 1201px) and (max-width: 1400) {
-}
 
 /* Card Component Section */
 
