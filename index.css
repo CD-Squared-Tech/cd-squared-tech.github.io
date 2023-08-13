@@ -134,6 +134,10 @@ body {
   font-size: 0.875rem;
 }
 
+.mobile-copyright {
+  display: none;
+}
+
 /* Content */
 .mainContentWrapper {
   display: flex;
@@ -272,6 +276,7 @@ p {
     font-size: 1rem;
   }
 
+
   .copyright[view="desktop"] {
     display: none;
   }
@@ -279,6 +284,7 @@ p {
   .mobile-copyright {
     text-align: center;
     margin: 10px;
+    display: block;
   }
 }
 /* Media query breakpoints less than 515px */
