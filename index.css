@@ -272,6 +272,11 @@ img {
   display: block;
 }
 
+.card-top {
+  overflow: hidden;
+  border-radius: 10px 10px 0px 0px;
+}
+
 .card-top > img {
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
@@ -287,15 +292,12 @@ img {
   flex-direction: column;
 }
 
-.card-2 .card-top > img {
-  height: 300px;
-}
 
 .card-bottom {
   padding: 1em;
   display: flex;
-  justify-content: left;
-  align-items: stretch;
+  justify-content: space-between;
+  height: 320px;
   flex-direction: column;
 }
 
@@ -334,7 +336,7 @@ button.btn-card:hover {
 
 @media (min-width: 720px) {
   .cards {
-    height: 500px;
+    /* height: 500px; */
   }
 
   .cards-container {
@@ -349,20 +351,6 @@ button.btn-card:hover {
     position: relative;
   }
 
-  .card-2 .card-top > img {
-    height: 100%;
-  }
-
-  .card-2 .card-bottom {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(255,255,255, 1);
-    overflow: hidden;
-    width: 100%;
-    height: 55%;
-  }
 
   p.card-content {
     font-size: 0.875rem;
@@ -371,11 +359,9 @@ button.btn-card:hover {
 
   button.btn-card {
     width: 50%;
-    position: absolute;
     bottom: 1em;
     right: 1em;
     left: 1em;
-    margin-top: 50px;
   }
 }
 
@@ -383,13 +369,14 @@ button.btn-card:hover {
 
 @media (min-width: 1100px) {
   .cards {
-    height: 600px;
+    /* height: 600px; */
   }
 
   .cards-container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 4em;
+    gap: 30px;
   }
 
   .card {
@@ -397,16 +384,16 @@ button.btn-card:hover {
   }
 
   .card > img {
-    transition: transform 750ms cubic-bezier(.5, 0, .5, 1); /* Animation */
+    transition: transform 250ms cubic-bezier(.5, 0, .5, 1); /* Animation */
   }
 
-  /* .card-top > img {
-    transition: transform 750ms cubic-bezier(.5, 0, .5, 1);
-  } */
+  .card-top > img {
+    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+  }
 
-  /* .card-top > img:hover {
-    transform: scale(1.2);
-  } */
+  .card:hover img {
+    transform: scale(1.1);
+  }
 
   .card-bottom > h2 {
     font-size: 1.75rem;
@@ -422,9 +409,8 @@ button.btn-card:hover {
     font-size: 1rem;
     padding: 0.75em 1em;
   }
-  .card-1,
-  .card-2 {
-    transition: .5s ease;
+  .card-1{
+    transition: all .5s ease-in-out;
   }
 
   .card-1 {
@@ -436,43 +422,14 @@ button.btn-card:hover {
     transform: translateY(-5px);
   }
 
-  .card-1 button.btn-card,
-  .card-2 button.btn-card {
-    border: 2px solid var(--blueSteel);
-    background-color: transparent;
+  .card-1 button.btn-card {
+    background-color: var(--lightBlueSteel);
     color: var(--blackBlueSteel);
   }
 
-  .card-1:hover button.btn-card,
-  .card-2:hover button.btn-card {
+  .card-1:hover button.btn-card {
     background-color: var(--blueSteel);
     color: var(--ligherBlueSteel);
-  }
-
-  .card-2 .card-bottom {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(255,255,255, 0.8);
-    overflow: hidden;
-    width: 100%;
-    height: 25%;
-    transition: .5s ease;
-  }
-
-  .card-2 .card-bottom p.card-content {
-    display: none;
-    transition: .5s ease-in-out;
-  }
-
-  .card-2:hover .card-bottom {
-    height: 50%;
-    background-color: rgba(255,255,255, 1);
-  }
-
-  .card-2:hover .card-bottom p.card-content {
-    display: flex;
   }
 
 }
