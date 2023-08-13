@@ -91,7 +91,11 @@ body {
 }
 
 .logo-container {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+}
+
+.socials {
+  width: 70%;
 }
 
 .socials ul {
@@ -101,7 +105,7 @@ body {
   padding: 0;
   margin: auto;
   justify-content: space-evenly;
-  width: 75%;
+  width: 100%;
 }
 
 .socials li {
@@ -211,6 +215,10 @@ p {
 
   .logo-container {
     margin-bottom: 15px;
+  }
+
+  .socials {
+    max-width: 150px;
   }
 
   .socials ul {
