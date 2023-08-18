@@ -2,9 +2,9 @@
 
 Trying to get into Tech but don't know where to start? ChaDev, in collaboration with ChaTech, presents CD Tech just for you!
 
-<div style="text-align: center;">
-  <img src="CD_Techies_Logo.png" alt="Group logo">
-</div>
+<p align="center" width="100%">
+  <img src="./resources/images/CD_Techies_Logo.png" alt="Group logo">
+</p>
 
 ## Introduction
 
