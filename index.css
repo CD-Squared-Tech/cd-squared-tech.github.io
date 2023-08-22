@@ -343,14 +343,6 @@ img {
   object-fit: cover;
 }
 
-.card-content {
-  padding: .25em 1em 1em;
-  display: flex;
-  justify-content: left;
-  align-items: stretch;
-  flex-direction: column;
-}
-
 
 .card-bottom {
   padding: 1em;
@@ -374,7 +366,7 @@ p.card-content {
 
 button.btn-card {
   background-color: var(--blueSteel);
-  margin-top: .25em;
+  margin-top: .5em;
   width: 50%;
   border: none;
   color: #fff;
@@ -389,14 +381,9 @@ button.btn-card:hover {
   opacity: .8;
 }
 
-
-
 /* Tablet Styles */
 
 @media (min-width: 720px) {
-  .cards {
-    /* height: 500px; */
-  }
 
   .cards-container {
     flex-direction: row;
@@ -410,10 +397,9 @@ button.btn-card:hover {
     position: relative;
   }
 
-
   p.card-content {
     font-size: 0.875rem;
-    margin-bottom: 25px;
+    margin-bottom: 4em;
   }
 
   button.btn-card {
@@ -427,9 +413,6 @@ button.btn-card:hover {
 /* Desktop Styles */
 
 @media (min-width: 1100px) {
-  .cards {
-    /* height: 600px; */
-  }
 
   .cards-container {
     max-width: 1000px;
@@ -440,18 +423,18 @@ button.btn-card:hover {
 
   .card {
     max-width: 400px;
+    transition: .5s ease;
   }
 
-  .card > img {
-    transition: transform 250ms cubic-bezier(.5, 0, .5, 1); /* Animation */
+
+  .card:hover {
+    box-shadow: 0px 10px 20px 5px rgba(0,0,0,0.5);
+    transform: translateY(-5px);
   }
 
-  .card-top > img {
-    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
-  }
+  .card-top {
+    overflow: hidden;
 
-  .card:hover img {
-    transform: scale(1.1);
   }
 
   .card-bottom > h2 {
@@ -467,26 +450,13 @@ button.btn-card:hover {
     width: 40%;
     font-size: 1rem;
     padding: 0.75em 1em;
-  }
-  .card-1{
-    transition: all .5s ease-in-out;
-  }
 
-  .card-1 {
-    background-color: #fff;
-  }
-
-  .card-1:hover {
-    box-shadow: 0px 10px 20px 5px rgba(0,0,0,0.5);
-    transform: translateY(-5px);
-  }
-
-  .card-1 button.btn-card {
-    background-color: var(--lightBlueSteel);
+    border: 2px solid var(--blueSteel);
+    background-color: transparent;
     color: var(--blackBlueSteel);
   }
 
-  .card-1:hover button.btn-card {
+  .card:hover button.btn-card {
     background-color: var(--blueSteel);
     color: var(--ligherBlueSteel);
   }
