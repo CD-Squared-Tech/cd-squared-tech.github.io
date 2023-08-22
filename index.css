@@ -19,7 +19,7 @@ Rachel D.
   --darkBlueSteel: #2e3e47;
   --blueSteel: #678693;
   /* Mobile head of header variable... for mobile sidebar height, mobile sidebar wrapper height, and top margin for content area */
-  --headerHeight: 120px;
+  --headerHeight: 130px;
 }
 
 /* Fonts */
@@ -65,12 +65,15 @@ body {
 
 /* Sidebar */
 .sidebarWrapper {
+  min-width: 200px;
+  max-width: 350px;
   display: block;
   width: 22%;
   position: sticky;
   z-index: 100;
   background-color: var(--ligherBlueSteel);
   box-shadow: 0px 0px 15px var(--darkBlueSteel);
+  padding-top: 35px;
 }
 
 .sidebar {
@@ -78,12 +81,21 @@ body {
   flex-direction: column;
   text-align: center;
   height: 100%;
+  align-items: center;
 }
 
-.logo {
+.stacked-logo {
   padding: 5px;
-  margin-top: 20px;
-  width: 100%;
+  width: 80%;
+  margin: auto;
+}
+
+.logo-container {
+  margin-bottom: 10px;
+}
+
+.socials {
+  width: 70%;
 }
 
 .socials ul {
@@ -91,8 +103,9 @@ body {
   gap: 10px;
   list-style: none;
   padding: 0;
-  margin: 0;
-  justify-content: center;
+  margin: auto;
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 .socials li {
@@ -110,15 +123,19 @@ body {
   padding: 0 4px;
 }
 
-.socials li a {
+.socials ul a {
   text-decoration: none;
   color: white;
 }
 
-.copyright {
+.copyright[view="desktop"] {
   margin-top: auto;
   padding: 10px;
   font-size: 0.875rem;
+}
+
+.mobile-copyright {
+  display: none;
 }
 
 /* Content */
@@ -191,6 +208,33 @@ p {
 /* Media query breakpoints */
 /* Phone */
 @media screen and (max-width: 768px) {
+
+  .stacked-logo {
+    display: none;
+  }
+
+  .horizontal-logo {
+    width: 180px;
+  }
+
+  .logo-container {
+    margin-bottom: 15px;
+  }
+
+  .socials {
+    max-width: 150px;
+  }
+
+  .socials ul {
+    gap: 30px;
+  }
+
+  .socials ul li {
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 1rem;
+  }
+
   .mainPageWrapper {
     flex-direction: column;
   }
@@ -205,6 +249,9 @@ p {
     width: 100dvw;
     height: var(--headerHeight);
     position: fixed;
+    min-width: none;
+    max-width: none;
+    padding-top: 25px;
   }
 
   .sidebar {
@@ -228,20 +275,32 @@ p {
   .heroContent p {
     font-size: 1rem;
   }
+
+
+  .copyright[view="desktop"] {
+    display: none;
+  }
+
+  .mobile-copyright {
+    text-align: center;
+    margin: 10px;
+    display: block;
+  }
 }
 /* Media query breakpoints less than 515px */
 @media screen and (max-width: 515px) {
-  .socials {
+  /* .socials {
+    display: none;
+  } */
+}
+
+
+@media screen and (min-width: 769px) {
+  .horizontal-logo {
     display: none;
   }
 }
-/* Tablets / Laptops */
-@media screen and (min-width: 769px) and (max-width: 1200) {
-}
 
-/* Desktops */
-@media screen and (min-width: 1201px) and (max-width: 1400) {
-}
 
 /* Card Component Section */
 
@@ -272,6 +331,11 @@ img {
   display: block;
 }
 
+.card-top {
+  overflow: hidden;
+  border-radius: 10px 10px 0px 0px;
+}
+
 .card-top > img {
   border-top-right-radius: 8px;
   border-top-left-radius: 8px;
@@ -279,11 +343,12 @@ img {
   object-fit: cover;
 }
 
+
 .card-bottom {
   padding: 1em;
   display: flex;
-  justify-content: left;
-  align-items: stretch;
+  justify-content: space-between;
+  height: 320px;
   flex-direction: column;
 }
 
@@ -339,7 +404,6 @@ button.btn-card:hover {
 
   button.btn-card {
     width: 50%;
-    position: absolute;
     bottom: 1em;
     right: 1em;
     left: 1em;
@@ -354,12 +418,14 @@ button.btn-card:hover {
     max-width: 1000px;
     margin: 0 auto;
     padding: 4em;
+    gap: 30px;
   }
 
   .card {
     max-width: 400px;
     transition: .5s ease;
   }
+
 
   .card:hover {
     box-shadow: 0px 10px 20px 5px rgba(0,0,0,0.5);
@@ -368,6 +434,7 @@ button.btn-card:hover {
 
   .card-top {
     overflow: hidden;
+
   }
 
   .card-bottom > h2 {
@@ -383,6 +450,7 @@ button.btn-card:hover {
     width: 40%;
     font-size: 1rem;
     padding: 0.75em 1em;
+
     border: 2px solid var(--blueSteel);
     background-color: transparent;
     color: var(--blackBlueSteel);
@@ -392,4 +460,5 @@ button.btn-card:hover {
     background-color: var(--blueSteel);
     color: var(--ligherBlueSteel);
   }
+
 }
