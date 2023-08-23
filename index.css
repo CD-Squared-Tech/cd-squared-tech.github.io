@@ -476,3 +476,10 @@ button.btn-card:hover {
   }
 
 }
+
+/* Contact Form Section */
+
+.contact {
+  height: 400px;
+  background-color: var(--darkBlueSteel);
+}
