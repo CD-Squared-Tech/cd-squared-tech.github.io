@@ -21,22 +21,23 @@
       <div class="sidebarWrapper">
         <div class="sidebar">
           <div class="logo-container">
-            <img class="logo" src="./resources/images/logo.svg" alt="logo" />
+            <img class=" stacked-logo" src="./resources/images/logo-stacked.svg" alt="logo" />
+            <img class=" horizontal-logo" src="./resources/images/logo-horizontal.svg" alt="logo" />
           </div>
           <div class="socials">
             <ul>
-              <li>
-                <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
-              </li>
-              <li>
-                <a href=""><i class="fa-brands fa-discord"></i></a>
-              </li>
-              <li>
-                <a href=""><i class="fa-brands fa-facebook-f"></i></a>
-              </li>
+              <a href=""><li>
+                <i class="fa-brands fa-linkedin-in"></i>
+              </li></a>
+              <a href=""><li>
+                <i class="fa-brands fa-discord"></i>
+              </li></a>
+              <a href=""><li>
+                <i class="fa-brands fa-facebook-f"></i>
+              </li></a>
             </ul>
           </div>
-          <div class="copyright"><p>Copyright ©CD Techies</p></div>
+          <div class="copyright" view="desktop"><p>Copyright ©CD Techies</p></div>
         </div>
       </div>
 
@@ -65,51 +66,47 @@
           <!-- Card Component Section -->
           <section class="cards">
             <div class="cards-container">
-              <article class="card card-1">
-                    <div class="card-top">
-                    <img
-                  src="resources/images/card-img-1.jpg"
-                  alt="two people looking at code on laptop"
-                />
-                    </div>
+
+              <!-- Card One -->
+              <article class="card">
+                <div class="card-top">
+                  <img src="resources/images/card-img-1.jpg" alt="two people looking at code on laptop" />
+                </div>
                 <div class="card-bottom">
-                      <h2>Heading</h2>
-                        <p class="card-content">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua.
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.MEEP
-                  </p>
-                  <button class="btn-card">Learn More</button>
+                  <h2>Heading</h2>
+                    <p class="card-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <button class="btn-card">Learn More</button>
+                </div>
+              </article>
+              <!-- Card Two -->
+              <article class="card">
+                <div class="card-top">
+                    <img src="resources/images/card-img-2.jpg" alt="two people looking at code on a laptop" />
+                </div>
+                <div class="card-bottom">
+                  <h2>Heading</h2>
+                    <p class="card-content">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. incididunt ut labore et dolore magna aliqua.
+                    </p>
+                    <button class="btn-card">Learn More</button>
+
                 </div>
               </article>
 
-              <article class="card card-2">
-                    <div class="card-top">
-                    <img
-                  src="resources/images/card-img-3-min.jpg"
-                  alt="two people looking at code on a laptop"
-                />
-                </div>
-                    <div class="card-bottom">
-                      <h2>Heading</h2>
-                  <p class="card-content">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua.
-                            incididunt ut labore et dolore magna aliqua.
-                  </p>
-                  <button class="btn-card">Learn More</button>
-                </div>
-              </article>
             </div>
           </section>
+          <!-- End of Card Section -->
 
           <!-- Following Section -->
           <section
             style="height: 400px; background-color: rgb(175, 60, 140)"
           ></section>
+          <!-- Footer copyright for mobile view-->
+          <section class="mobile-copyright">
+            <div class="copyright" view="mobile"><p>Copyright ©CD Techies</p></div>
+          </section>
         </div>
       </main>
     </div>
