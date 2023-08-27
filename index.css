@@ -38,6 +38,15 @@ body {
   background-color: var(--lighterBlueSteel);
 }
 
+p {
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-family: 'Baskervville', serif;
+  font-size: 3rem;
+}
+
 /* Button Style */
 .cdBtn {
   padding: 8px 16px;
@@ -205,6 +214,34 @@ p {
   font-weight: 200;
 }
 
+.cd-split-section {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--darkBlueSteel);
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  padding: 100px 5%;
+}
+
+.cd-split-section img {
+  max-width: 50%;
+  border-radius: 10px;
+}
+
+.cd-split-text h1{
+  color: var(--ligherBlueSteel);
+  margin-bottom: 5px;
+}
+
+.cd-split-text p {
+  color: var(--ligherBlueSteel);
+}
+
+.flex-reverse {
+  flex-direction: row-reverse;
+}
+
 /* Media query breakpoints */
 /* Phone */
 @media screen and (max-width: 768px) {
@@ -286,6 +323,15 @@ p {
     margin: 10px;
     display: block;
   }
+
+  .cd-split-section {
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  .cd-split-section img {
+    max-width: 90%;
+  }
 }
 /* Media query breakpoints less than 515px */
 @media screen and (max-width: 515px) {
@@ -299,6 +345,7 @@ p {
   .horizontal-logo {
     display: none;
   }
+
 }
 
 
@@ -381,6 +428,8 @@ button.btn-card:hover {
   opacity: .8;
 }
 
+
+
 /* Tablet Styles */
 
 @media (min-width: 720px) {
@@ -408,6 +457,8 @@ button.btn-card:hover {
     right: 1em;
     left: 1em;
   }
+
+  
 }
 
 /* Desktop Styles */
