@@ -11,6 +11,10 @@ Rachel D.
 
 */
 
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Baskervville&family=Lato:ital,wght@0,100;0,300;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Baskervville&family=Lato:ital,wght@0,100;0,300;1,100&family=Noto+Sans:wght@100&display=swap");
+
 /* Color Variables */
 :root {
   --ligherBlueSteel: #f5fafc;
@@ -21,10 +25,6 @@ Rachel D.
   /* Mobile head of header variable... for mobile sidebar height, mobile sidebar wrapper height, and top margin for content area */
   --headerHeight: 130px;
 }
-
-/* Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Baskervville&family=Lato:ital,wght@0,100;0,300;1,100&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Baskervville&family=Lato:ital,wght@0,100;0,300;1,100&family=Noto+Sans:wght@100&display=swap");
 
 * {
   box-sizing: border-box;
