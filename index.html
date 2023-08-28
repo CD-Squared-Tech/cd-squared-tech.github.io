@@ -101,18 +101,31 @@
 
           <!-- Contact Form Section -->
           <section class="contact">
-            <form>
-              <label for="fname">First name:</label><br>
-              <input type="text" id="fname" name="fname"><br>
-              <label for="lname">Last name:</label><br>
-              <input type="text" id="lname" name="lname"><br>
-              <label for="email">Email:</label><br>
-              <input type="text" id="email" name="email"><br>
-              <label for="message">Message:</label><br>
-              <input type="text" id="message" name="message"><br>
-              <input type="submit">
-
-            </form>
+            <div class="form">
+              <form>
+                <ul>
+                  <li>
+                    <label for="fname">First name:</label><br>
+                    <input type="text" id="fname" name="fname"><br>
+                  </li>
+                  <li>
+                    <label for="lname">Last name:</label><br>
+                    <input type="text" id="lname" name="lname"><br>
+                  </li>
+                  <li>
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email"><br>
+                  </li>
+                  <li>
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message"></textarea><br>
+                  </li>
+                  <li class="btn-contact">
+                    <button type="submit">Submit</button>
+                  </li>
+                </ul>
+              </form>
+            </div>
           </section>
 
         </div>

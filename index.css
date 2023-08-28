@@ -468,4 +468,27 @@ button.btn-card:hover {
 .contact {
   height: 400px;
   background-color: var(--darkBlueSteel);
+  color: var(--lightBlueSteel);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact form {
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.contact form ul {
+  list-style: none;
+}
+
+.contact form li {
+  margin-top: 1em;
+}
+
+li input {
+  border-radius: 3px;
 }
