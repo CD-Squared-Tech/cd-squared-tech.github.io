@@ -474,19 +474,36 @@ button.btn-card:hover {
   justify-content: center;
 }
 
+.contact h1 {
+  color: var(--lightBlueSteel);
+  font-size: 2em;
+  font-family: "Baskervville", serif;
+}
+
 .contact form {
   margin: 0 auto;
   align-items: center;
   justify-content: center;
-  
 }
 
 .contact form ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact form label {
+  display: inline-block;
+  width: 90px;
+  font-family: "Noto Sans", sans-serif;
 }
 
 .contact form li {
-  margin-top: 1em;
+  margin-top: 1rem;
+}
+
+input, textarea {
+  font: 1rem, "Noto Sans";
 }
 
 li input {
