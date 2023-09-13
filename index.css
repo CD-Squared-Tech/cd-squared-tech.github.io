@@ -7,6 +7,7 @@ TC
 James
 Steven P.
 Rachel D.
+Shay Y.
 
 
 */
@@ -512,4 +513,92 @@ button.btn-card:hover {
     color: var(--ligherBlueSteel);
   }
 
+}
+
+/* Contact Form Section */
+
+.contact {
+  position: relative;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--lightBlueSteel);
+}
+
+.contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url(./resources/images/contact-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  filter: brightness(45%);
+}
+
+.form {
+  position: relative;
+  color: #fff;
+}
+
+.contact h1 {
+  color: #fff;
+  font-size: 2rem;
+  font-family: "Baskervville", serif;
+  margin: 0;
+}
+
+.contact form {
+  margin: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact form ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.contact form label {
+  display: inline-block;
+  width: 90px;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.contact form li {
+  margin-top: 1rem;
+}
+
+.contact input, textarea {
+  font: 1rem sans-serif;
+  width: 250px;
+  box-sizing: border-box;
+  border: 1px solid;
+  border-radius: 3px;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--lightBlueSteel);
+}
+
+.btn-contact {
+  background-color: var(--lightBlueSteel);
+  color: var(--blackBlueSteel);
+  border: none;
+  border-radius: 3px;
+  margin-top: .5rem;
+  padding: .5rem 2rem;
+  font-family: "Noto Sans", sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: .5s ease;
+}
+
+.btn-contact:hover {
+  opacity: .7;
 }
