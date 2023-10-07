@@ -614,7 +614,6 @@ img {
   padding: 1em;
   display: flex;
   justify-content: space-between;
-  height: 320px;
   flex-direction: column;
 }
 
@@ -627,7 +626,9 @@ p.card-content {
   line-height: 1.35;
   font-family: "Noto Sans", sans-serif;
   text-align: justify;
+  word-spacing: -0.05em;
   margin-top: .5em;
+  height: 100px;
 }
 
 button.btn-card {
