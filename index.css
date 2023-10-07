@@ -626,6 +626,7 @@ p.card-content {
   line-height: 1.35;
   font-family: "Noto Sans", sans-serif;
   text-align: justify;
+  word-spacing: -0.05em;
   margin-top: .5em;
   height: 100px;
 }
