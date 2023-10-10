@@ -3,7 +3,7 @@ from .models import Contact
 from django.core.mail import send_mail
 from .forms import ContactForm
 
-def contact_us(request):
+def contact(request):
     form_submitted = False
     if request.method == 'POST':
         form = ContactForm(request.POST)
