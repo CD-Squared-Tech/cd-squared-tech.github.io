@@ -10,10 +10,10 @@ def contact(request):
         if form.is_valid():
             form.save()
             form_submitted = True
-            fname = form.validated_data['fname']
-            lname = form.validated_data['lname']
-            email = form.validated_data['email']
-            message = form.validated_data['message']
+            fname = form.cleaned_data['fname']
+            lname = form.cleaned_data['lname']
+            email = form.cleaned_data['email']
+            message = form.cleaned_data['message']
 
             subject = 'New Contact Form Submission'
             message_body = f'Name: {fname} {lname}\nEmail: {email}\nMessage: {message}'

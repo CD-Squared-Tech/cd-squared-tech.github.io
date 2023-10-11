@@ -12,3 +12,9 @@ class ContactForm(forms.ModelForm):
             'message': forms.Textarea(attrs={'class': 'form-control', 'placeholder': 'Message'}),
         }
 
+        labels = {
+            'fname': '',
+            'lname': '',
+            'email': '',
+            'message': '',
+        }
