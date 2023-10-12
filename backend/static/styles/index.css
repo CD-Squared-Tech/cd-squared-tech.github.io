@@ -69,23 +69,37 @@ h1 {
 
 /* Navbar */
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: var(--darkBlueSteel);
-  color: var(--lightBlueSteel);
-  padding: 0 10px;
-  height: var(--headerHeight);
+  color: white;
+  height: 50px;
   position: fixed;
   width: 100%;
   z-index: 100;
 }
 
 .navbar ul {
-  display: flex;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0, auto;
+}
+
+.navbar li {
+  float: right;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar a:hover {
+  background-color: var(--blueSteel);
+  border-radius: 3px;
 }
 
 /* Sidebar and Content Wrapper */
