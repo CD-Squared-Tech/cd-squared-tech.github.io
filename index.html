@@ -15,6 +15,9 @@
     <link rel="stylesheet" type="text/css" href="index.css" />
     <link rel="icon" type="image/svg+xml" href="resources/images/logo-stacked.svg" />
     <!-- favicon displays as browser tab art -->
+    <!-- Google CAPTCHA V3-->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
   </head>
   <body>
     <!-- Main Page Wrapper -->
@@ -28,7 +31,7 @@
           </div>
           <div class="socials">
             <ul>
-              <a href=""><li>
+              <a href="https://www.linkedin.com/company/cd-tech-chattanooga/?lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3BTpfURw48SJSGxjYm7gpszQ%3D%3D"><li>
                 <i class="fa-brands fa-linkedin-in"></i>
               </li></a>
               <a href=""><li>
@@ -207,7 +210,7 @@
                     <textarea id="message" name="message"></textarea><br>
                   </li>
                   <li>
-                    <button type="submit" class="btn-contact">Submit</button>
+                    <button class="btn-contact g-recaptcha" data-sitekey="API-KEY-HERE" data-callback='onSubmit' data-action='submit'><strong>Submit</strong></button>
                   </li>
                 </ul>
               </form>
@@ -226,5 +229,10 @@
     <!-- ...until script it being used. -->
     <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
     <script type="module" src="index.js"></script>
+    <script>
+      function onSubmit(token) {
+        document.getElementById("demo-form").submit();
+      }
+    </script>   
   </body>
 </html>
