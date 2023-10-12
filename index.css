@@ -41,7 +41,7 @@ body {
   background-color: var(--lighterBlueSteel);
 }
 
-p {
+p, label {
   font-family: 'Lato', sans-serif;
 }
 
@@ -628,11 +628,13 @@ img {
 p.card-content {
   font-size: 1rem;
   line-height: 1.35;
-  font-family: "Noto Sans", sans-serif;
-  text-align: justify;
+  /* font-family: "Noto Sans", sans-serif;
+  text-align: justify; */
   word-spacing: -0.05em;
   margin-top: .5em;
   height: 100px;
+  font-weight: 700;
+
 }
 
 button.btn-card {
@@ -790,7 +792,7 @@ button.btn-card:hover {
 .contact form label {
   display: inline-block;
   width: 90px;
-  font-family: "Noto Sans", sans-serif;
+  font-weight: 900;
 }
 
 .contact form li {
@@ -816,7 +818,6 @@ input:focus, textarea:focus {
   border-radius: 3px;
   margin-top: .5rem;
   padding: .5rem 2rem;
-  font-family: "Noto Sans", sans-serif;
   font-size: 1rem;
   cursor: pointer;
   transition: .5s ease;
