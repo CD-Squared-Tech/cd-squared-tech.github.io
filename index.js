@@ -18,11 +18,27 @@ const cancelButton = document.getElementById("cancel");
 const dialog = document.getElementById("learnMore");
 
 // LearnMore button opens a modal dialog
-learnBtn.addEventListener("click", () => {
-  dialog.showModal();
-});
+// learnBtn.addEventListener("click", () => {
+//   dialog.showModal();
+// });
 
 // Cancel button closes the dialog box
-cancelButton.addEventListener("click", () => {
-  dialog.close("");
-});
+// cancelButton.addEventListener("click", () => {
+//   dialog.close("");
+// });
+
+const contentWrapper = document.querySelector(".mainContentWrapper")
+
+
+const sidebar = document.querySelector(".sidebar")
+const logo = document.querySelector(".horizontal-logo")
+
+
+
+contentWrapper.addEventListener("scroll", () => {
+  const contentContainer = document.querySelector(".content")
+  let contentContainerScroll = contentContainer.scrollTop;
+  if(contentContainerScroll > contentWrapper) {
+    console.log("hello")
+  }
+})

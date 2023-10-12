@@ -269,6 +269,11 @@ p {
 
   .horizontal-logo {
     width: 180px;
+    transition: all 250ms ease-in-out;
+  }
+
+  .small-horizontal-logo {
+    height: 50px;
   }
 
   .logo-container {
