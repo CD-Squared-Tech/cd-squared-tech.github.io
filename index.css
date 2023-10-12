@@ -135,6 +135,14 @@ h1 {
   padding: 0 4px;
 }
 
+.meetup-icon {
+  padding: 7px !important;
+}
+
+.fa-meetup {
+  font-size: 23px;
+}
+
 .socials ul a {
   text-decoration: none;
   color: white;
@@ -287,6 +295,14 @@ p {
     padding: 5px;
     border-radius: 3px;
     font-size: 1rem;
+  }
+
+  .meetup-icon {
+    padding: 3px !important;
+  }
+  
+  .fa-meetup {
+    font-size: 21px;
   }
 
   .mainPageWrapper {
