@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'apps.contact',
     'apps.main',
+    'decouple'
 ]
 
 MIDDLEWARE = [
@@ -131,6 +132,7 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# send_email config
 MAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = config('EMAIL_HOST_USER')
@@ -139,3 +141,6 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 DEFAULT_FROM_EMAIL = config('EMAIL_HOST_USER')
+
+# Captcha secret key
+CAPTCHA_SITE_KEY = config('CAPTCHA_SITE_KEY')

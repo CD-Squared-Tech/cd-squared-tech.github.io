@@ -1,5 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load template_tags %}
 
 {% block content %}
   <!-- Main Page Wrapper -->
@@ -13,7 +14,7 @@
         </div>
         <div class="socials">
           <ul>
-            <a href=""><li>
+            <a href="https://www.linkedin.com/company/cd-tech-chattanooga/"><li>
               <i class="fa-brands fa-linkedin-in"></i>
             </li></a>
             <a href=""><li>
@@ -166,7 +167,7 @@
           <img src="{% static 'images/meeting-1.jpg' %}" alt=""/>
           <div class="cd-split-text">
             <h1>Header</h1>
-            <p>This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // </p>
+            <p>This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // {{ CAPTCHA_SITE_KEY|env }}</p>
           </div>
       </section>
 
@@ -180,7 +181,7 @@
                 <form method="post">
                     {% csrf_token %}
                     {{ form.as_p }}
-                    <button type="submit" class="cdBtn">Submit</button>
+                    <button class="cdBtn g-recaptcha" data-sitekey="{{ CAPTCHA_SITE_KEY }}" data-callback='onSubmit' data-action='submit'><strong>Submit</strong></button>
                 </form>
             {% endif %}
         </div>

@@ -16,6 +16,8 @@
         <link rel="stylesheet" type="text/css" href="{% static 'styles/index.css' %}"/>
         <link rel="icon" type="image/svg+xml" href="resources/images/logo-stacked.svg" />
         <!-- favicon displays as browser tab art -->
+        <!-- Google CAPTCHA V3-->
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script> 
     </head>
     <body>
         <header>
@@ -29,5 +31,10 @@
         {% block content %}{% endblock %}
         <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
         <script type="module" src="{% static 'scripts/index.js' %}"></script>
+        <script>
+            function onSubmit(token) {
+              document.getElementById("contact").submit();
+            }
+        </script>  
     </body>
 </html>
