@@ -218,7 +218,7 @@ h1 {
   min-height: 500px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(./resources/images/hero-background.jpg);
+  background-image: url(../images/hero-background.jpg);
   justify-content: center;
   align-items: start;
 }
