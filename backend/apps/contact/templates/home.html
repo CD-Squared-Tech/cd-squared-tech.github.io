@@ -1,6 +1,5 @@
 {% extends 'base.html' %}
 {% load static %}
-<!-- {% load template_tags %} -->
 
 {% block content %}
   <!-- Main Page Wrapper -->
@@ -167,7 +166,7 @@
           <img src="{% static 'images/meeting-1.jpg' %}" alt=""/>
           <div class="cd-split-text">
             <h1>Header</h1>
-            <p>This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // {{ CAPTCHA_SITE_KEY|env }}</p>
+            <p>This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // This is the content // </p>
           </div>
       </section>
 
@@ -181,7 +180,7 @@
                 <form id="contact_form" method="post">
                     {% csrf_token %}
                     {{ form.as_p }}
-                    <button class="cdBtn g-recaptcha" data-sitekey="6LdEIZwoAAAAAKik632KQ42gCxXr-sW9XiMLjjpS" data-callback='onSubmit' data-action='submit'><strong>Submit</strong></button>
+                    <button class="cdBtn g-recaptcha" data-sitekey="{{ CAPTCHA_SITE_KEY }}" data-callback='onSubmit' data-action='submit'><strong>Submit</strong></button>
                 </form>
             {% endif %}
         </div>

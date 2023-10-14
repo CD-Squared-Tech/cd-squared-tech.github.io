@@ -142,5 +142,3 @@ EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
 DEFAULT_FROM_EMAIL = config('EMAIL_HOST_USER')
 
-# Captcha secret key
-CAPTCHA_SITE_KEY = config('CAPTCHA_SITE_KEY')

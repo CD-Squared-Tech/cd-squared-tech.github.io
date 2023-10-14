@@ -2,9 +2,11 @@ from django.shortcuts import render
 from .models import Contact
 from django.core.mail import send_mail
 from .forms import ContactForm
+from decouple import config
 
 def contact(request):
     form_submitted = False
+    CAPTCHA_SITE_KEY = config('CAPTCHA_SITE_KEY', default='')
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
@@ -32,4 +34,4 @@ def contact(request):
                 form.errors['lname'] = 'Please enter your last name.'
     else: 
         form = ContactForm()
-    return render(request, 'home.html', {'form': form, 'form_submitted': form_submitted})
+    return render(request, 'home.html', {'form': form, 'form_submitted': form_submitted, 'CAPTCHA_SITE_KEY': CAPTCHA_SITE_KEY})
