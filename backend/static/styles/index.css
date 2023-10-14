@@ -840,6 +840,10 @@ button.btn-card:hover {
   border-radius: 3px;
 }
 
+.success-message {
+  color: white
+}
+
 input:focus, textarea:focus {
   border-color: var(--lightBlueSteel);
 }

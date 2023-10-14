@@ -1,6 +1,6 @@
 {% extends 'base.html' %}
 {% load static %}
-{% load template_tags %}
+<!-- {% load template_tags %} -->
 
 {% block content %}
   <!-- Main Page Wrapper -->
@@ -173,15 +173,15 @@
 
       <!-- Contact Form Section -->
       <section class="contact">
-        <div id="contact" class="form">
+        <div class="form">
             <h1>Contact Us</h1>
             {% if form_submitted %}
                 <p class="success-message">Thank you for your message. We will get back to you soon.</p>
             {% else %}
-                <form method="post">
+                <form id="contact_form" method="post">
                     {% csrf_token %}
                     {{ form.as_p }}
-                    <button class="cdBtn g-recaptcha" data-sitekey="{{ CAPTCHA_SITE_KEY }}" data-callback='onSubmit' data-action='submit'><strong>Submit</strong></button>
+                    <button class="cdBtn g-recaptcha" data-sitekey="6LdEIZwoAAAAAKik632KQ42gCxXr-sW9XiMLjjpS" data-callback='onSubmit' data-action='submit'><strong>Submit</strong></button>
                 </form>
             {% endif %}
         </div>
