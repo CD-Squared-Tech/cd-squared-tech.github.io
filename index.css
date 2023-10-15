@@ -41,7 +41,7 @@ body {
   background-color: var(--lighterBlueSteel);
 }
 
-p {
+p, label {
   font-family: 'Lato', sans-serif;
 }
 
@@ -151,6 +151,14 @@ h1 {
   padding: 0 4px;
 }
 
+.meetup-icon {
+  padding: 7px !important;
+}
+
+.fa-meetup {
+  font-size: 23px;
+}
+
 .socials ul a {
   text-decoration: none;
   color: white;
@@ -225,8 +233,8 @@ h1 {
   display: flex;
   flex-direction: column;
   max-width: 80%;
-  text-align: center;
-  align-items: center;
+  /* text-align: center;
+  align-items: center; */
 }
 
 .heroContent,
@@ -238,11 +246,11 @@ p {
 }
 
 .heroContent h1 {
-  font-size: 7vw;
+  font-size: 5vw;
   font-family: "Baskervville", serif;
   margin: 0px;
-  text-decoration: underline;
-  font-style: italic;
+  /* text-decoration: underline;
+  font-style: italic; */
 }
 
 .heroContent p {
@@ -314,6 +322,14 @@ p {
     padding: 5px;
     border-radius: 3px;
     font-size: 1rem;
+  }
+
+  .meetup-icon {
+    padding: 3px !important;
+  }
+  
+  .fa-meetup {
+    font-size: 21px;
   }
 
   .mainPageWrapper {
@@ -659,11 +675,13 @@ img {
 p.card-content {
   font-size: 1rem;
   line-height: 1.35;
-  font-family: "Noto Sans", sans-serif;
-  text-align: justify;
+  /* font-family: "Noto Sans", sans-serif;
+  text-align: justify; */
   word-spacing: -0.05em;
   margin-top: .5em;
   height: 100px;
+  font-weight: 700;
+
 }
 
 button.btn-card {
@@ -821,7 +839,7 @@ button.btn-card:hover {
 .contact form label {
   display: inline-block;
   width: 90px;
-  font-family: "Noto Sans", sans-serif;
+  font-weight: 900;
 }
 
 .contact form li {
@@ -847,7 +865,6 @@ input:focus, textarea:focus {
   border-radius: 3px;
   margin-top: .5rem;
   padding: .5rem 2rem;
-  font-family: "Noto Sans", sans-serif;
   font-size: 1rem;
   cursor: pointer;
   transition: .5s ease;
