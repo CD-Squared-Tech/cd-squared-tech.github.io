@@ -86,7 +86,7 @@ h1 {
   background-color: var(--ligherBlueSteel);
   box-shadow: 0px 0px 15px var(--darkBlueSteel);
   padding-top: 35px;
-  transition: all 150ms linear;
+  transition: all 250ms ease-in-out;
 }
 
 .shortSidebarWrapper {
@@ -128,12 +128,13 @@ h1 {
 
 .socials-list {
   opacity: 1;
-  transition: all 250ms linear;
+  margin-top: 0px !important;
+  transition: all 350ms ease-in-out;
 }
 
 .socials-list-hidden {
   opacity: 0;
-  margin-top: -150px;
+  margin-top: -32px !important;
 }
 
 .socials li {
@@ -191,7 +192,7 @@ h1 {
   width: 100%;
   background-color: var(--ligherBlueSteel);
   position: static;
-  transition: all 350ms linear;
+  transition: all 350ms ease-in-out;
 }
 
 .shortMainContentWrapper {

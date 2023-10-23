@@ -27,7 +27,7 @@ const dialog = document.getElementById("learnMore");
 //   dialog.close("");
 // });
 
-let contentWrapper = document.querySelector(".content")
+const contentWrapper = document.querySelector(".content")
 let contentWrapperPostion = contentWrapper.scrollTop;
 const mainContentWrapper = document.querySelector(".mainContentWrapper")
 const sidebarWrapper = document.querySelector(".sidebarWrapper")
@@ -35,13 +35,14 @@ const logo = document.querySelector(".horizontal-logo")
 const socials = document.querySelector(".socials-list")
 const viewportWidth = window.innerWidth;
 
-// console.log(viewportWidth)
+console.log(mainContentWrapper.scrollTop)
 
 if(viewportWidth <= 768) {
   contentWrapper.addEventListener("scroll", (event) => {
     let contentContainerScroll = contentWrapper.scrollTop;
+    // console.log("contentContainerScroll :" + contentContainerScroll)
+    // console.log("contentWrapperPostion :" + contentWrapperPostion)
     if(contentContainerScroll > contentWrapperPostion) {
-      // console.log("hello")
       logo.classList.add("small-horizontal-logo");
       socials.classList.add("socials-list-hidden")
       sidebarWrapper.classList.add("shortSidebarWrapper")
