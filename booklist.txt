@@ -1,0 +1,26 @@
+Code Gamers Development: Essentials
+Critical Thinking & Logic Mastery
+The DevOps Handbook (2nd Edition)
+Ace the Data Science Interview
+Automate the Boring Stuff: Practical Programming for Total Beginners (2nd Edition)
+A Common-Sense Guide to Data Structures and Algorithms (2nd Edition)
+50 Algorithms Every Programmer Should Know (2nd Edition)
+Beginner's Step-by-Step Coding Course
+HTML & CSS Quickstart Guide
+React Key Concepts (1st Edition)
+JavaScript: The Definitive Guide (7th Edition)
+Network Basics for Hackers
+Complete A+ Guide to IT Hardware and Software (8th Edition)
+LLM Prompt Engineering for Developers (2023 Edition)
+Test-Driven Development
+Refactoring: Improving the Design of Existing Code (2nd Edition)
+Linux Basics for Hackers
+Clean Code: A Handbook of Agile Software Craftsmanship
+SQL: All-in-One (3rd Edition)
+How to Make a Video Game All By Yourself
+The Science of Self-Learning
+The Graphic Design Bible
+The Recursive Book of Recursion
+A Programmer's Guide to Computer Science Vol. 1
+Arduino Starter Kit
+CanaKit Raspberry Pi 4 Starter Kit
